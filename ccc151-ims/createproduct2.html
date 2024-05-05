@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="main-style.css">
+    </head>
+    <body>
+        <div class="page-header">
+            <div class="notif-bell"><i class='bx bx-bell'>&nbsp;</i></div>
+            <div class="logo"><img src="media/mr.png" height="40" width="180"></div>
+        </div>
+        <div class="sidenav">
+            <h1>Inventory Management System</h1>
+            <div class="panel-profile">
+                <img src="media/profile.png" alt="img" height="300" width="300"></div>
+            <div class="nav-text">
+                <a href="#"><i class='bx bx-bar-chart-alt-2'></i>&nbsp;Dashboard</a>
+                <a href="#"><i class='bx bx-category-alt'>&nbsp;Products List</i></a>
+                <a href="#"><i class='bx bx-group'></i>&nbsp;Supplier List</i></a>
+                <a href="#"><i class='bx bx-cart'></i>&nbsp;Order/Purchase</i></a>
+            </div>
+        </div>
+        <div class="center">
+                <div class="popup" id="popup">
+                <div class="form">
+                <div class="form-element">
+                <h2>CREATE NEW PRODUCT</h2>
+                <div class="prodname">
+                    <label class="sku" required>Product Name</label>
+                    <input type="text" id="product-name">
+                </div>
+                <div class="prodsku">
+                    <label class="sku" required>Product SKU</label> 
+                     <input type="text" id="SKU">
+                </div>
+                <div class="sup-price">
+                    <label class="sku" required>Supplier Price</label>
+                    <input type="text" id="supplier-price">
+                 </div>
+                <div class="ret-price">
+                    <label class="sku" required>Retail Price</label>
+                    <input type="text" id="retail-price">
+                </div>
+                <div class="qty">
+                    <label class="sku" required>QTY</label>
+                    <input type="text" id="quantity">
+                </div>
+                <div class="exp-date">
+                    <label class="sku" required>Expiry Date</label>
+                    <input type="date" id="exp-date">
+                </div>
+                </div>
+             </div>   
+            <div class="controls">
+                <button type="close-btn">CANCEL</button></div>
+                <button type="submit">SAVE</button></div>
+            </div>
+    </div> 
+        <div class="table">
+            <div class="table-header">
+            </div>
+            <div class="buttons">
+                <button class="to-order-btn">View <span style="color:#F36A1C;"><em> to reoder</em></span> items <i class='bx bx-cart'></i></button></button> 
+                <button class="to-dispose-btn">View <span style="color: red;"><em>to dispose</em></span> items <i class='bx bx-trash'></i>&nbsp;</button></button>
+                <button class="to-discont-btn">To <span style="color: #574F4F;" ><em><b>discontinue </b><i class='bx bx-x-circle'></i>&nbsp;</em></span></button></button>   
+            </div> 
+            <button class="open-popup"><i class='bx bx-plus'></i>&nbsp;Create New Product</button>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button class="search-btn"><i class='bx bx-search'></i></button>
+            </div>
+            <div class="table-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SKU</th>
+                            <th>Product Name</th>
+                            <th>QTY</th>
+                            <th>Shelf Life</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>Coke Zero</td>
+                            <td>16</td>
+                            <td>8 months</td>
+                            <td>
+                                <button><i class='bx bx-cart'></i></button>
+                                <button><i class='bx bx-trash'></i></button>
+                                <button><i class='bx bx-x-circle'></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123</td>
+                            <td>Coke Zero</td>
+                            <td>16</td>
+                            <td>8 months</td>
+                            <td>
+                                <button><i class='bx bx-cart'></i></button>
+                                <button><i class='bx bx-trash'></i></button>
+                                <button><i class='bx bx-x-circle'></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123</td>
+                            <td>Coke Zero</td>
+                            <td>16</td>
+                            <td>8 months</td>
+                            <td>
+                                <button><i class='bx bx-cart'></i></button>
+                                <button><i class='bx bx-trash'></i></button>
+                                <button><i class='bx bx-x-circle'></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123</td>
+                            <td>Coke Zero</td>
+                            <td>16</td>
+                            <td>8 months</td>
+                            <td>
+                                <button><i class='bx bx-cart'></i></button>
+                                <button><i class='bx bx-trash'></i></button>
+                                <button><i class='bx bx-x-circle'></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123</td>
+                            <td>Coke Zero</td>
+                            <td>16</td>
+                            <td>8 months</td>
+                            <td>
+                                <button><i class='bx bx-cart'></i></button>
+                                <button><i class='bx bx-trash'></i></button>
+                                <button><i class='bx bx-x-circle'></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123</td>
+                            <td>Coke Zero</td>
+                            <td>16</td>
+                            <td>8 months</td>
+                            <td>
+                                <button><i class='bx bx-cart'></i></button>
+                                <button><i class='bx bx-trash'></i></button>
+                                <button><i class='bx bx-x-circle'></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </body>
+</html>
